@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learn the Latest Tech Skills; Advance Your Career | Udacity</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 
@@ -13,6 +14,36 @@
 <body>
     <div id="wrapper" class="wrapper">
         <header>
+            <div class="mob-bar-toggler">
+                <a href="#" class="header-navbar-toogler" onclick="toggle()">
+                    <span class="bar bar-top"></span>
+                    <span class="bar bar-mid"></span>
+                    <span class="bar bar-bottom"></span>
+                </a>
+            </div>
+            <div class="mob logo">
+                <svg>
+                    <path
+                        d="m29 .5 1 .5v13c0 5.551887-2.8897 8.695692-5.995216 10.099885l.004616.000115-7.620963 4.388562c-.05877.03456-.11776.068527-.176957.101902l-.08642.049764.001806-.00254c-1.643976.908207-3.442184 1.362312-5.126866 1.362312-5 0-11-4-11-12v-12l2 1v11c0 8 6 10 9 10 1.858706 0 4.86901-.76773 6.89043-3.254517-3.708704-.872847-7.89043-4.06678-7.89043-10.745483v-11.8l-8 4.8-2-1 10-6 1 .5 1 .5v13c0 6.939958 4.515283 8.612086 7.017542 8.933368.608244-1.311778.982458-2.935466.982458-4.933368v-13l2 1v12c0 1.852645-.321777 3.49077-.878395 4.91438 2.526618-.365163 6.878395-2.101236 6.878395-8.91438v-11.75l-6 3.75-2-1 8-5z"
+                        fill="#02b3e4"></path>
+                </svg>
+            </div>
+            <div id="mov-sidenav" class="mob-sidenav">
+                <a class="sidenav-item logos" style="background-color: #1c262f;"> <svg>
+                        <path
+                            d="m29 .5 1 .5v13c0 5.551887-2.8897 8.695692-5.995216 10.099885l.004616.000115-7.620963 4.388562c-.05877.03456-.11776.068527-.176957.101902l-.08642.049764.001806-.00254c-1.643976.908207-3.442184 1.362312-5.126866 1.362312-5 0-11-4-11-12v-12l2 1v11c0 8 6 10 9 10 1.858706 0 4.86901-.76773 6.89043-3.254517-3.708704-.872847-7.89043-4.06678-7.89043-10.745483v-11.8l-8 4.8-2-1 10-6 1 .5 1 .5v13c0 6.939958 4.515283 8.612086 7.017542 8.933368.608244-1.311778.982458-2.935466.982458-4.933368v-13l2 1v12c0 1.852645-.321777 3.49077-.878395 4.91438 2.526618-.365163 6.878395-2.101236 6.878395-8.91438v-11.75l-6 3.75-2-1 8-5z"
+                            fill="#02b3e4"></path>
+                        <path
+                            d="m57.6 17.239187c0 2.546698-2.085517 4.407747-4.965517 4.407747s-4.965517-1.86105-4.965517-4.407747v-9.403193h-1.986206v9.501143c0 3.330298 2.88 6.170846 6.951723 6.170846 4.071724 0 6.951724-2.938498 6.951724-6.170846v-9.501143h-1.986207zm16.286897-9.403193h-5.36276v15.67199h5.36276c4.468965 0 7.547586-3.03645 7.547586-7.835996 0-4.701596-3.07862-7.835994-7.547586-7.835994zm-.19862 13.71299h-3.177932v-11.75399h3.17793c3.376553 0 5.76 2.252847 5.76 5.876994 0 3.917998-2.482757 5.779046-5.76 5.876996zm43.49793.29385c-3.575172 0-5.95862-2.644648-5.95862-6.170846 0-3.526197 2.482758-6.072895 5.95862-6.072895 2.78069 0 4.468966 1.5672 4.468966 1.5672l.794483-1.3713s-1.787587-1.86105-5.46207-1.86105c-4.766896 0-7.746206 3.526198-7.746206 7.738045 0 4.309797 3.07862 7.933945 7.944827 7.933945 3.773793 0 5.66069-2.5467 5.66069-2.5467l-1.092414-1.175398c-.09931-.09795-1.588965 1.959-4.568276 1.959zm14.896553-14.00684h1.986206v15.67199h-1.986207zm10.924137 1.959h4.965517v13.71299h1.986207v-13.71299h4.96552v-1.959h-11.917241m30.587583 0-4.766896 7.150344-4.866207-7.150347h-2.085518l5.95862 8.717546v6.954445h1.986208v-6.954444l5.85931-8.71754m-81.434482 0-6.157242 15.67199h1.986207l1.688276-4.5057 6.45517-1.3713 2.18483 5.876998h1.986203l-6.05793-15.67199h-2.085518zm-1.886897 9.305242 2.97931-7.248294h.099315l2.482754 6.170842-5.56138 1.07745z"
+                            fill="#fff"></path>
+                    </svg>
+                </a>
+                <a class="sidenav-item">Programs</a>
+                <a class="sidenav-item">Career</a>
+                <a class="sidenav-item">For Enterprise</a>
+                <a class="sidenav-item" style="color:#02b3e4">Sign In</a>
+                <a class="sidenav-item" style="color:#02ccba">Get Started</a>
+            </div>
             <div class="logo">
                 <svg>
                     <path
@@ -299,7 +330,7 @@
                             <p class="nanodegree-content-title">
                                 <span
                                     style="border-bottom: 4px; border-bottom-color: #FFA234; border-bottom-style: solid;">
-                                     1-on-1
+                                    1-on-1
                                 </span>
                                 technical mentor
                             </p>
@@ -319,7 +350,7 @@
                                 <img src="src/career.svg">
                             </div>
                             <p class="nanodegree-content-title">
-                                Personal career coach and 
+                                Personal career coach and
                                 <span
                                     style="border-bottom: 4px; border-bottom-color: #FFA234; border-bottom-style: solid;">
                                     career services
@@ -327,7 +358,8 @@
                             </p>
                         </div>
                         <div class="nanodegree-content-description">
-                                You’ll have access to career coaching sessions, interview prep advice, and resume and online professional profile reviews to help you grow in your career.
+                            You’ll have access to career coaching sessions, interview prep advice, and resume and online
+                            professional profile reviews to help you grow in your career.
                         </div>
                     </div>
                 </div>
@@ -344,11 +376,12 @@
                                     style="border-bottom: 4px; border-bottom-color: #FFA234; border-bottom-style: solid;">
                                     Flexible
                                 </span>
-                                 learning program
+                                learning program
                             </p>
                         </div>
                         <div class="nanodegree-content-description">
-                                Get a custom learning plan tailored to fit your busy life. Learn at your own pace and reach your personal goals on the schedule that works best for you.
+                            Get a custom learning plan tailored to fit your busy life. Learn at your own pace and reach
+                            your personal goals on the schedule that works best for you.
                         </div>
                     </div>
                 </div>
@@ -357,10 +390,319 @@
     </section>
 
     <section>
-        <div class=""
+        <div class="programs-wrapper">
+            <div class="programs">
+                <div class="programs--">
+                    <h2>Ready to begin?</h2>
+                    <p>Enroll in a Nanodegree program and build your best future today. </p>
+                    <div class="programs-content">
+                        <a>See Our Programs</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <footer style="height:20rem; width:100%;"></footer>
+    <section class="popular">
+        <div class="popular-wrapper">
+            <div class="popular-content">
+                <div class="popular-content-title"> Check out our newest and most popular Nanodegree programs </div>
+                <p class="popular-content-subtitle">
+                    With our growing catalog of over 30 Nanodegree programs from beginner to advanced, you're sure to
+                    find one that fits your career goals </p>
+                <div class="popular-content-more">
+                    <a>
+                        See all programs
+                    </a>
+                </div>
+            </div>
+            <div class="popular-cards">
+                <a class="popular-cards-item">
+                    <div class="card-item-head" style="background-image: url('src/hero-bg-1180x624__1_.jpg');">
+                        <div class="card-item-text prefix">School of</div>
+                        <div class="card-item-text title">Business</div>
+                        <div class="card-item-flag new">New</div>
+                    </div>
+                    <div class="card-item-body">
+                        UX Designer
+                    </div>
+                </a>
+                <a class="popular-cards-item">
+                    <div class="card-item-head" style="background-image: url('src/hero-bg-1180x624.jpg');">
+                        <div class="card-item-text prefix"> School of </div>
+                        <div class="card-item-text title">Data Science</div>
+                        <div class="card-item-flag new">New</div>
+                    </div>
+                    <div class="card-item-body">
+                        Data Streaming
+                    </div>
+                </a>
+                <a class="popular-cards-item">
+                    <div class="card-item-head" style="background-image: url('src/nd088_-_hero.jpg');">
+                        <div class="card-item-text prefix"> School of </div>
+                        <div class="card-item-text title">Artificial Intelligence</div>
+                        <div class="card-item-flag new">New</div>
+                    </div>
+                    <div class="card-item-body">
+                        AI Product Manager
+                    </div>
+                </a>
+                <a class="popular-cards-item">
+                    <div class="card-item-head" style="background-image: url('src/intro-to-programming.jpg');">
+                        <div class="card-item-text prefix"> School of </div>
+                        <div class="card-item-text title">Programming</div>
+                        <div class="card-item-flag pop">Popular</div>
+                    </div>
+                    <div class="card-item-body">
+                        Intro to Programming
+                    </div>
+                </a>
+                <a class="popular-cards-item">
+                    <div class="card-item-head" style="background-image: url('src/digital-markter.jpg');">
+                        <div class="card-item-text prefix"> School of </div>
+                        <div class="card-item-text title">Business</div>
+                        <div class="card-item-flag pop">Popular</div>
+                    </div>
+                    <div class="card-item-body">
+                        Digital Marketer
+                    </div>
+                </a>
+                <a class="popular-cards-item">
+                    <div class="card-item-head" style="background-image: url('src/data-structures.jpg');">
+                        <div class="card-item-text prefix"> School of </div>
+                        <div class="card-item-text title">Programming</div>
+                        <div class="card-item-flag pop">Popular</div>
+                    </div>
+                    <div class="card-item-body">
+                        Data Structures and Algorithms
+                    </div>
+                </a>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="stories" style="background-color: rgba(29,124,248,.05);">
+        <div class="stories-wrapper">
+            <h2 class="stories-header">Strength in numbers </h2>
+            <ul class="stories-number">
+                <li class="stories-number--">
+                    <img src="src/degree-hat.svg">
+                    <h3 class="stories-number--number">90,000+</h3>
+                    <p class="stories-number--content">Udacity graduates and counting </p>
+                </li>
+                <li class="stories-number--">
+                    <img src="src/star_copy.svg">
+                    <h3 class="stories-number--number">200+ </h3>
+                    <p class="stories-number--content">Industry experts partnering to build our content </p>
+                </li>
+                <li class="stories-number--">
+                    <img src="src/star_copy_2.svg">
+                    <h3 class="stories-number--number">100+ </h3>
+                    <p class="stories-number--content">Enterprise customers world-wide </p>
+                </li>
+            </ul>
+            <ul class="stories-comments">
+                <li>
+                    <div class="stories-comment" style="border-top: 3px solid #02b3e4;">
+                        <div class="comment-card-cropper">
+                            <img src="src/mike.jpg">
+                        </div>
+                        <h3 class="comment-card-name">Mike </h3>
+                        <p class="comment-card-comments">"Ultimately, Udacity is what really became the driving force
+                            behind the career change." </p>
+                        <div class="comment-card-rest">
+                            <p class="card-now">NOW AT</p>
+                            <p class="card-at">Audible</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="stories-comment" style="border-top: 3px solid #02ccba;">
+                        <div class="comment-card-cropper">
+                            <img src="src/Ryan.jpg">
+                        </div>
+                        <h3 class="comment-card-name">Ryan</h3>
+                        <p class="comment-card-comments">"Before Udacity, I was working two minimum wage jobs. Now, I
+                            have a new job, a new mindset, and new life!" </p>
+                        <div class="comment-card-rest">
+                            <p class="card-now">NOW AT</p>
+                            <p class="card-at">FINRA</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="stories-comment" style="border-top: 3px solid #a951ed;">
+                        <div class="comment-card-cropper">
+                            <img src="src/isuare.jpg">
+                        </div>
+                        <h3 class="comment-card-name">Isaure </h3>
+                        <p class="comment-card-comments">"While freelancing as an interior designer, I took the Intro to
+                            Programming Nanodegree program to learn a new set of skills. It exposed me to a field of
+                            work I really enjoyed and now I work as a front-end developer. </p>
+                        <div class="comment-card-rest">
+                            <p class="card-now">NOW AT</p>
+                            <p class="card-at">Keeward</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="promo">
+        <div class="promo-wrapper">
+            <div class="promo-banner">
+                <div class="promo-banner-image"></div>
+                <div class="promo-banner-content">
+                    <div class="promo-banner- title">Make a difference by becoming a Udacity mentor </div>
+                    <p class="promo-banner- subtitle">Help students master the tech skills they need to advance their
+                        career
+                    </p>
+                </div>
+                <div class="promo-banner-ct">
+                    <a class="promo-banner-btn">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="explore">
+        <div class="explore-wrapper">
+            <div class="explore-banner">
+                <h2> Find the right learning path for you </h2>
+                <p> Match your goals to our programs, explore your options, and map out your path to success. </p>
+                <div class="explore-button-list">
+                    <a class="explore-button primary"> Explore by School </a>
+                    <a class="explore-button secondary"> Explore by Skill </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-wrapper">
+            <div class="footer-logo">
+            </div>
+            <div class="footer-primary">
+                <div class="footer-nav-col">
+                    <ul>
+                        <li>
+                            <div>
+                                <p></p>
+                                <ul>
+                                    <li><a></a></li>
+                                    <li><a></a></li>
+                                    <li><a></a></li>
+                                    <li><a></a></li>
+                                    <li><a></a></li>
+                                    <li><a></a></li>
+                                    <li><a></a></li>
+                                    <li><a></a></li>
+                                    <li><a></a></li>
+                                    <li><a></a></li>
+                                    <li><a></a></li>
+                                    <li><a></a></li>
+                                    <li><a></a></li>
+                                    <li><a></a></li>
+                                    <li><a></a></li>
+                                    <li><a></a></li>
+                                    <li><a></a></li>
+                                    <li><a></a></li>
+                                    <li><a></a></li>
+                                    <li><a></a></li>
+                                    <li><a></a></li>
+                                    <li><a></a></li>
+                                    <li><a></a></li>
+                                    <li><a></a></li>
+                                    <li><a></a></li>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <p></p>
+                                <ul>
+                                    <li><a></a></li>
+                                    <li><a></a></li>
+                                    <li><a></a></li>
+                                    <li><a></a></li>
+                                    <li><a></a></li>
+                                    <li><a></a></li>
+                                    <li><a></a></li>
+                                    <li><a></a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <p></p>
+                                <ul>
+                                    <li><a></a></li>
+                                    <li><a></a></li>
+                                    <li><a></a></li>
+                                    <li><a></a></li>
+                                    <li><a></a></li>
+                                    <li><a></a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <p></p>
+                                <ul>
+                                    <li><a></a></li>
+                                    <li><a></a></li>
+                                    <li><a></a></li>
+                                    <li><a></a></li>
+                                    <li><a></a></li>
+                                    <li><a></a></li>
+                                    <li><a></a></li>
+                                    <li><a></a></li>
+                                    <li><a></a></li>
+                                    <li><a></a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <p></p>
+                                <ul>
+                                    <li><a></a></li>
+                                    <li><a></a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <o></o>
+                                <ul>
+                                    <li><a></a></li>
+                                    <li><a></a></li>
+                                    <li><a></a></li>
+                                    <li><a></a></li>
+                                    <li><a></a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <p></p>
+                                <ul>
+                                    <li><a></a></li>
+                                    <li><a></a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <p></p>
+                                <ul>
+                                    <li><a></a></li>
+                                    <li><a></a></li>
+                                    <li><a></a></li>
+                                    <li><a></a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="script/index.js"></script>
 </body>
