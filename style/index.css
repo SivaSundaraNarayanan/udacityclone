@@ -1,3 +1,9 @@
+:root {
+    --color-primary : #02b3e4;
+    --color-new: #a739c8;
+    --color-popular: #ffa234;
+}
+
 * {
     padding: 0px;
     margin: 0px;
@@ -65,7 +71,6 @@ header {
     height: 30px;
 }
 
-
 .mob-bar-toggler {
     display: none;
     top: 50%;
@@ -107,12 +112,14 @@ header {
     width: 100%;
     align-items: center;
     justify-content: center;
-    transform: translateY(-50%);
+    top:50%
 }
 
-.logo svg {
-    width: 11.25rem;
-    height: 3.75rem;
+.mob svg {
+    width: 1.875rem;
+    height: 1.875rem;
+    top: -50%;
+    position: relative;
 }
 
 .button-navigation {
@@ -189,7 +196,7 @@ header {
     font-size: .8125rem;
     text-align: center;
     color: #ffffff;
-    background: #02B3E4;
+    background: var(--color-primary);
     padding: 0 10px;
     font-weight: 600;
     text-transform: uppercase;
@@ -880,11 +887,11 @@ ul {
 }
 
 .card-item-head .new {
-    background-color: #ff5483;
+    background-color: var(--color-new);
 }
 
 .card-item-head .pop {
-    background-color: #ffa234;
+    background-color: var(--color-popular);
 }
 
 .card-item-body {
@@ -1087,8 +1094,8 @@ ul {
 
 .promo-banner-btn {
     background-color: #fff;
-    border: 1px solid #02b3e4;
-    color: #02b3e4;
+    border: 1px solid var(--color-primary);
+    color: var(--color-primary);
     text-transform: uppercase;
     width: 10.13rem;
     box-shadow: 8px 10px 20px 0px rgba(46, 61, 73, 0.15);
@@ -1173,7 +1180,7 @@ ul {
 
 .primary {
     color: #fff;
-    background-color: #02b3e4;
+    background-color: var(--color-primary);
 }
 
 .primary:hover {
@@ -1183,7 +1190,7 @@ ul {
 .secondary {
     background-color: #fff;
     margin-left: 24px;
-    color: #02b3e4;
+    color: var(--color-primary);
 }
 
 .secondary:hover {
@@ -1230,12 +1237,15 @@ ul {
     .explore-button-list {
         flex-direction: column;
     }
+
     .stories-wrapper li {
         width: 90%;
     }
+
     .explore-button {
         margin: 1rem auto;
     }
+
     .recents {
         padding-top: 4rem;
         padding-bottom: 48px;
@@ -1244,32 +1254,47 @@ ul {
         margin: 0;
         height: 30rem;
     }
+
     .recents-promo {
         flex-direction: column
     }
+
     .recents-promo-banner {
         background-position: top;
     }
+
     .recents-promo-content {
         align-items: flex-start;
         margin: 2rem 1.5rem 1.25rem;
     }
+
     .recents-promo-more {
+        display: flex;
+        justify-content: center;
         margin: auto 1.25rem;
     }
     .promo-banner {
         flex-direction: column;
     }
+
+    .promo-banner-ct {
+        justify-content: center;
+        margin: auto 0;
+    }
+
     .nanodegree-image {
         display: none;
     }
+
     .nanodegree-content-header {
         margin-left: 0;
         align-items: center;
     }
+
     .nanodegree-content-description {
         text-align: left;
     }
+
     .discover-item {
         min-width: 10rem;
     }
@@ -1285,7 +1310,7 @@ ul {
         flex-direction: column;
     }
     .stories-comment {
-        width: 50%;
+        width: 90%;
     }
     .stories-comments li {
         display: flex;
@@ -1303,14 +1328,13 @@ ul {
 }
 
 @media screen and (max-width: 565px) {
-    .hero-content {
+    .hero {
         width: 95%;
     }
+
+    .search-box {position: relative;}
+
     .hero-content .search-box input[type=text] {
         width: 90%;
-    }
-    .hero-content * {
-        width: 90%;
-        line-height: 1rem;
     }
 }
