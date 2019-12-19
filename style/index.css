@@ -279,7 +279,6 @@ header {
 }
 
 .search-box {
-    width: 26.88rem;
     background-position: .8125rem center;
     font-size: .875rem;
     margin-bottom: 24px;
@@ -290,7 +289,6 @@ header {
     font-size: .875rem;
     margin-bottom: 24px;
     padding-left: 2.813rem;
-    width: 26.88rem;
     height: 3.125rem;
     background-repeat: no-repeat;
     background-size: 24px;
@@ -1142,13 +1140,11 @@ ul {
     font-size: 1.9rem;
     line-height: 3.25rem;
     font-weight: lighter;
-    width: 20rem;
 }
 
 .explore p {
     font-size: 1rem;
     font-weight: lighter;
-    width: 28.25rem;
     line-height: 1.75rem;
 }
 
@@ -1234,6 +1230,16 @@ ul {
 }
 
 @media screen and (max-width: 769px) {
+
+    .popular-cards-item {
+        margin-left: 0;
+    }
+
+
+    .popular-content {
+        margin-right: 0;
+    }
+
     .explore-button-list {
         flex-direction: column;
     }
@@ -1329,7 +1335,12 @@ ul {
 
 @media screen and (max-width: 565px) {
     .hero {
+        margin: 5px;
         width: 95%;
+    }
+
+    .recents-promo-content {
+        margin: 0;
     }
 
     .search-box {position: relative;}
