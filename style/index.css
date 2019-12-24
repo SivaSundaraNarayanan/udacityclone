@@ -1,5 +1,5 @@
 :root {
-    --color-primary : #02b3e4;
+    --color-primary: #02b3e4;
     --color-new: #a739c8;
     --color-popular: #ffa234;
 }
@@ -8,6 +8,10 @@
     padding: 0px;
     margin: 0px;
     font-family: "Open Sans", sans-serif;
+}
+
+a {
+    text-decoration: none !important;
 }
 
 body {
@@ -48,6 +52,7 @@ header {
 }
 
 .mob-sidenav {
+    display: none;
     height: 100%;
     width: 0;
     position: fixed;
@@ -57,7 +62,6 @@ header {
     background-color: #2E3D49;
     overflow-x: hidden;
     transition: 0.5s;
-    display: flex;
     flex-direction: column;
 }
 
@@ -69,6 +73,7 @@ header {
 .logos svg {
     width: 180px;
     height: 30px;
+    display: flex;
 }
 
 .mob-bar-toggler {
@@ -112,7 +117,7 @@ header {
     width: 100%;
     align-items: center;
     justify-content: center;
-    top:50%
+    top: 50%
 }
 
 .mob svg {
@@ -171,6 +176,10 @@ header {
     align-items: flex-start;
     border-radius: 0;
     margin: 0px 18px;
+}
+
+.link a {
+    color: rgb(82, 92, 101);
 }
 
 .catalog:nth-child(1) {
@@ -253,7 +262,6 @@ header {
     max-width: 73.75rem;
     box-sizing: border-box;
     margin-top: 24px;
-    margin-bottom: 48px;
     padding: 48px 24px;
 }
 
@@ -298,6 +306,7 @@ header {
     box-sizing: border-box;
     color: #242a2f;
     border: 1px solid #dbe2e8;
+    width: 100%;
 }
 
 ul li {
@@ -461,7 +470,6 @@ ul {
     text-align: center;
     vertical-align: center;
     white-space: nowrap;
-    text-decoration: none;
     width: 10.13rem;
     letter-spacing: .094rem;
     height: 3rem;
@@ -1159,7 +1167,6 @@ ul {
     user-select: none;
     text-align: center;
     white-space: nowrap;
-    text-decoration: none;
     font-weight: 600;
     font-size: 0.813rem;
     line-height: 2.625rem;
@@ -1214,10 +1221,6 @@ ul {
     .popular-content-title, .popular-content-subtitle, .popular-content-more {
         text-align: center;
     }
-    .stories-comment {
-        width: 100%;
-        height: 30rem;
-    }
     .wrapper header {
         padding: 0 1.5em;
     }
@@ -1227,31 +1230,38 @@ ul {
     .logo, .header-navigation {
         display: none;
     }
+    .mob-sidenav {
+        display: flex;
+    }
 }
 
 @media screen and (max-width: 769px) {
 
-    .popular-cards-item {
-        margin-left: 0;
+    .promo-banner-image {
+        border-radius: 8px;
     }
 
+    .explore-wrapper,.promo-wrapper,.popular-wrapper {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    } 
 
+    /* .popular-cards-item {
+        margin-left: 0;
+    } */
+    
     .popular-content {
         margin-right: 0;
     }
-
     .explore-button-list {
         flex-direction: column;
     }
-
     .stories-wrapper li {
         width: 90%;
     }
-
     .explore-button {
         margin: 1rem auto;
     }
-
     .recents {
         padding-top: 4rem;
         padding-bottom: 48px;
@@ -1260,20 +1270,16 @@ ul {
         margin: 0;
         height: 30rem;
     }
-
     .recents-promo {
         flex-direction: column
     }
-
     .recents-promo-banner {
         background-position: top;
     }
-
     .recents-promo-content {
         align-items: flex-start;
         margin: 2rem 1.5rem 1.25rem;
     }
-
     .recents-promo-more {
         display: flex;
         justify-content: center;
@@ -1282,25 +1288,21 @@ ul {
     .promo-banner {
         flex-direction: column;
     }
-
     .promo-banner-ct {
         justify-content: center;
         margin: auto 0;
     }
-
     .nanodegree-image {
         display: none;
     }
-
     .nanodegree-content-header {
         margin-left: 0;
         align-items: center;
     }
-
-    .nanodegree-content-description {
+    .nanodegree-content-description,.nanodegree-content-title {
+        width: auto;
         text-align: left;
     }
-
     .discover-item {
         min-width: 10rem;
     }
@@ -1333,19 +1335,40 @@ ul {
     }
 }
 
+@media screen and (max-width: 75.625rem) {
+    /* 1210px */
+    .stories-comment {
+        width: 100%;
+        height: 30rem;
+    }
+
+    .explore-wrapper,.promo-wrapper,.popular-wrapper,.programs-wrapper {
+        padding-left: 1rem;
+    }
+
+    .stories-comments {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+
 @media screen and (max-width: 565px) {
     .hero {
         margin: 5px;
         width: 95%;
     }
-
     .recents-promo-content {
         margin: 0;
     }
-
-    .search-box {position: relative;}
-
+    .search-box {
+        position: relative;
+    }
     .hero-content .search-box input[type=text] {
         width: 90%;
+    }
+
+    .popular-cards-item{
+        margin-left: 0;
     }
 }
